@@ -1,3 +1,5 @@
+import Inventory from "./components/inventory/Inventory";
+
 export default function Root(props) {
-  return <section>{props.name} FOOTER is mounted!</section>;
+  return <section><Inventory></Inventory></section>;
 }
