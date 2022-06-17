@@ -1,1 +1,7 @@
-<h1>Angular Micro - Front</h1>
+<p>Buscar por Nombre</p>
+
+<div *ngFor="let item of data let i = index">
+    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ i + 1 }}.png' alt="Foto Pokemon">
+   <a (click)="searchByName(item.name)"> {{item.name}} </a> 
+    <p>{{ i }} </p>
+</div>
